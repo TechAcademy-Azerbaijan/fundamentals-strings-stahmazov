@@ -1,9 +1,8 @@
-const prompt = require('prompt');
-prompt.start();
+let str = 'introduction to algorithms'
 
+let arr = str.split(' ')
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+}
+console.log(arr.join(' '))
