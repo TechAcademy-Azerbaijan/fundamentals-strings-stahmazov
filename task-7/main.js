@@ -1,9 +1,12 @@
-const prompt = require('prompt');
-prompt.start();
+let str = 'kpkkp';
+
+let max = str.split('p')[0].length
 
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for (let k of str.split('p')) {
+    if (max < k.length) {
+        max = k.length
+    }
+}
+
+console.log(max);
