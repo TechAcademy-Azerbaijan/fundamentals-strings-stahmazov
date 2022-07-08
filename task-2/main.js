@@ -1,9 +1,8 @@
-const prompt = require('prompt');
-prompt.start();
+let str = '328';
 
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+if (parseInt(str[0]) > parseInt(str.slice(-1))) {
+    console.log(str[0])
+} else{
+    console.log(str.slice(-1))
+}
